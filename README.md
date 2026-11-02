@@ -6,6 +6,8 @@
 
 一个《影之刃零》的 UE4SS Lua 测试模组。游戏中按 **F9**，暂时关闭当前已加载区域中一类空气墙对玩家的阻挡；再次按 F9 恢复。本功能每次启动游戏时默认关闭。
 
+**前置需求：**需要先安装[适配《影之刃零》的 UE4SS](https://www.nexusmods.com/phantombladezero/mods/13)。如果已经安装，无需重复安装；UE4SS 不包含在本模组中。
+
 ### 工作原理和限制
 
 - 处理 `BP_SplineWall_C` 的 `DynamicMeshComponent`：将其对玩家 Pawn 的碰撞响应设为忽略，不删除墙体，也不改变其他碰撞通道。
@@ -49,6 +51,8 @@ python -m unittest discover -s tests -v
 ## English
 
 A beta UE4SS Lua mod for *Phantom Blade Zero*. Press **F9** to disable a specific class of invisible wall's collision response to the player; press F9 again to restore the responses changed by the mod. The feature starts disabled on every game launch.
+
+**Requirement:** Install [UE4SS for Phantom Blade Zero](https://www.nexusmods.com/phantombladezero/mods/13) separately before using this mod. If already installed, do not install it again; UE4SS is not included.
 
 ### How it works and limitations
 

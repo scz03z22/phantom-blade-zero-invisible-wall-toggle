@@ -4,6 +4,16 @@
 
 Runtime Invisible Wall Toggle / 实时空气墙开关
 
+## Short description / 短简介
+
+Press F9 to toggle BP_SplineWall invisible barriers. Beta; requires UE4SS. / 按 F9 开关 BP_SplineWall 类空气墙。测试版，需要 UE4SS。
+
+## Requirement / 前置需求
+
+**Required: [UE4SS for Phantom Blade Zero](https://www.nexusmods.com/phantombladezero/mods/13). Install separately before using this mod; if it is already installed, do not reinstall it. UE4SS is not included.**
+
+**必须先安装：[适配《影之刃零》的 UE4SS](https://www.nexusmods.com/phantombladezero/mods/13)。如果已经安装，无需重复安装；本模组不包含 UE4SS。**
+
 ## English
 
 Press F9 to temporarily disable a class of invisible barriers in *Phantom Blade Zero*. Press F9 again to restore the responses changed by the mod. Disabled by default at startup; newly loaded matching walls are checked approximately every three seconds.
