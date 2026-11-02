@@ -11,7 +11,7 @@
 - 处理 `BP_SplineWall_C` 的 `DynamicMeshComponent`：将其对玩家 Pawn 的碰撞响应设为忽略，不删除墙体，也不改变其他碰撞通道。
 - 启用期间约每 **3 秒**检查一次已加载对象，新加载的同类墙可能会有短暂延迟。
 - 只处理上述类型和组件，**不能移除所有空气墙**。例如，我们发现一处屋顶的隐藏可行走碰撞不受本模组影响。
-- 本模组不修补场景碰撞，也不包含蹬墙跑酷功能。穿过原本的边界可能进入模型、卡住、掉出地图或影响任务；请备份存档，在正常可玩区域再按 F9 恢复。游戏本身仍可能自动保存进度。
+- 本模组后续可能会增加对没模型地形的碰撞判定（或者加更贴近的空气墙）来解决穿模跑到地图外的情况，目前codex好像没法很好解决这个问题，有懂的大佬欢迎讨论。
 - 没有画面内开关提示；`UE4SS.log` 中可查看带 `[NOSPLINEWALL]` 前缀的加载和切换记录。使用相同按键或修改相同墙体的模组可能冲突。
 
 ### 版本和测试情况
@@ -55,7 +55,7 @@ A beta UE4SS Lua mod for *Phantom Blade Zero*. Press **F9** to disable a specifi
 - Targets `DynamicMeshComponent` on `BP_SplineWall_C` actors. It changes the Pawn collision response to Ignore; it does not delete walls or change other collision channels.
 - Scans loaded objects approximately every **three seconds** while enabled. Newly streamed walls can take a short time to update.
 - It does **not remove all invisible barriers**. For example, a hidden walkable collision surface at a roof was not affected during testing.
-- This mod does not add missing scenery collision or include the experimental wall-climbing feature. Going beyond intended boundaries can result in clipping, getting stuck, falling out of the map, or disrupted progression. Back up saves and return to a safe playable area before restoring collision. The game can still autosave progress.
+- A future version may try to add collision for scenery with missing collision, or move barriers closer to visible surfaces, to reduce clipping and falling outside the map. Codex has not yet been able to solve this reliably; suggestions and discussion are welcome.
 - There is no on-screen toggle indicator. Load and toggle messages use the `[NOSPLINEWALL]` prefix in `UE4SS.log`. Mods using F9 or changing the same collisions can conflict.
 
 ### Version and testing

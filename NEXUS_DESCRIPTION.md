@@ -12,6 +12,8 @@ Press F9 to temporarily disable a class of invisible barriers in *Phantom Blade 
 
 Requires [game-specific UE4SS](https://github.com/KintaroModding/ue4ss/releases/tag/v3.0.1-1195-g1ceefac8). The prototype was tested with Windows Steam build 26266538; this packaged revision has not yet been independently tested in game. See the repository README and the archive's installation guide for setup and removal.
 
+A future version may try to add collision where scenery lacks it, or move barriers closer to visible surfaces, to reduce clipping and falling outside the map. Codex has not yet been able to solve this reliably; suggestions and discussion are welcome.
+
 ## 中文
 
 在《影之刃零》中按 F9，临时关闭一类空气墙对玩家的阻挡；再次按 F9 恢复。每次启动默认关闭，启用时约每三秒检查新加载的同类墙体。
@@ -19,6 +21,8 @@ Requires [game-specific UE4SS](https://github.com/KintaroModding/ue4ss/releases/
 **测试版：**本模组只处理 `BP_SplineWall_C` 的动态网格组件，不能移除所有空气墙，也不会为场景补充缺失的碰撞。越界可能导致穿模、卡住、掉出地图或影响任务。建议备份存档，回到正常可玩区域后再恢复空气墙。
 
 需要单独安装[适配游戏的 UE4SS](https://github.com/KintaroModding/ue4ss/releases/tag/v3.0.1-1195-g1ceefac8)。原型在 Windows Steam build 26266538 中测试；本打包版本尚未进行独立实机复测。安装与卸载步骤见仓库 README 和压缩包说明。
+
+本模组后续可能会增加对没模型地形的碰撞判定（或者加更贴近的空气墙）来解决穿模跑到地图外的情况，目前codex好像没法很好解决这个问题，有懂的大佬欢迎讨论。
 
 ## Credits / 说明
 
